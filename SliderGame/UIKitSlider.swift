@@ -15,7 +15,7 @@ struct UIKitSlider: UIViewRepresentable {
         let slider = UISlider()
         slider.minimumValue = 0
         slider.maximumValue = 100
-        slider.thumbTintColor = initRed(with: alpha)
+        //slider.thumbTintColor = initRed(with: alpha)
 
         slider.addTarget(
             context.coordinator,
@@ -36,7 +36,7 @@ struct UIKitSlider: UIViewRepresentable {
     }
 
     private func initRed(with alpha: Int) -> UIColor {
-        UIColor(red: 1, green: 0, blue: 0, alpha: Double(alpha)/100)
+        UIColor(red: 1, green: 0, blue: 0, alpha: Double(alpha) / 100)
     }
 }
 
