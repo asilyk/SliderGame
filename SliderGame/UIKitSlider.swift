@@ -25,7 +25,7 @@ struct UIKitSlider: UIViewRepresentable {
 
         return slider
     }
-    
+
     func updateUIView(_ uiView: UISlider, context: Context) {
         uiView.value = Float(value)
         uiView.thumbTintColor = initRed(with: alpha)

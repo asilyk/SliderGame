@@ -17,6 +17,7 @@ struct ContentView: View {
         VStack(spacing: 32) {
             Text("Подвиньте слайдер, как можно ближе к: \(targetValue)")
                 .frame(height: 100)
+
             HStack {
                 Text("0")
                 UIKitSlider(value: $currentValue, alpha: score)
